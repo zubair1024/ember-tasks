@@ -1,10 +1,18 @@
 /* jshint node: true */
 
-module.exports = function(environment) {
+module.exports = function (environment) {
   var ENV = {
     modulePrefix: 'ember-playground',
     environment: environment,
     rootURL: '/',
+    contentSecurityPolicy: {'connect-src': "'self' wss://*.firebaseio.com"},
+    firebase: 'https://tasks-6a54e.firebaseio.com/',
+    firebase: {
+      apiKey: 'AIzaSyCeltowf-1A0mLxDtV9ImpCIpfG-H6YpP4',
+      authDomain: 'tasks-6a54e.firebaseapp.com',
+      databaseURL: 'https://tasks-6a54e.firebaseio.com/',
+      // storageBucket: 'YOUR-FIREBASE-APP.appspot.com',
+    },
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
